@@ -1,0 +1,5 @@
+["Apple___Black_rot", "Jaipur"]	9
+["Corn___Common_rust", "Jaipur"]	9
+["Peach___Bacterial_spot", "string"]	2
+["Potato___Early_blight", "Jaipur"]	9
+["Tomato___Late_blight", "Jaipur"]	9

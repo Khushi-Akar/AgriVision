@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+pillow
+python-dotenv
+pydantic
+requests
+numpy
+python-dotenv
+torch
+torchvision

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+agrivision_env/
+*.pth
+*.db
+.env
+
+# Data & Models
+data/
+models/
+uploads/
+
+# Node
+node_modules/
+dist/
+
+# Misc
+*.txt.txt
+.DS_Store
