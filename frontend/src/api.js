@@ -1,5 +1,4 @@
-const API_BASE = "http://localhost:8000/api";
-
+const API_BASE = 'https://agrivision-j0t2.onrender.com/api';
 export async function scanCrop(file) {
   const formData = new FormData();
   formData.append("file", file);
