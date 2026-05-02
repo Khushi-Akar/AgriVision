@@ -9,7 +9,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-MODEL = "openrouter/free"
+MODEL = "mistralai/mistral-7b-instruct:free"
 
 
 def fallback_advice(disease: str, confidence: float):
@@ -66,7 +66,7 @@ Respond ONLY as valid JSON with this exact format:
             headers={
                 "Authorization": f"Bearer {OPENROUTER_API_KEY}",
                 "Content-Type": "application/json",
-                "HTTP-Referer": "http://localhost:3000",
+                "HTTP-Referer": "https://agrivision-xi.vercel.app",
                 "X-Title": "AgriVision"
             },
             json={
