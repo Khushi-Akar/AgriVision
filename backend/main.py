@@ -20,7 +20,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-cv_model = load_model()
+# Lazy load model
+cv_model = None
+
+def get_model():
+    global cv_model
+    if cv_model is None:
+        cv_model = load_model()
+    return cv_model
 
 
 @app.get("/")
@@ -50,7 +57,7 @@ async def scan_crop(
     with open(save_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
 
-    result = predict(save_path, cv_model)
+    result = predict(save_path, get_model())
     advice = get_advice(result["class"], result["confidence"])
 
     crop_name = result["class"].split("___")[0]

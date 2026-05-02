@@ -1,12 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.0.1+cpu
+torchvision==0.15.2+cpu
 fastapi
 uvicorn
 python-multipart
 sqlalchemy
 pillow
+google-generativeai
 python-dotenv
 pydantic
 requests
-numpy
-python-dotenv
-torch
-torchvision
+gdown
