@@ -8,8 +8,7 @@ load_dotenv()
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-
-MODEL = "mistralai/mistral-7b-instruct:free"
+MODEL = "google/gemma-3-27b-it:free"
 
 
 def fallback_advice(disease: str, confidence: float):
@@ -94,6 +93,5 @@ Respond ONLY as valid JSON with this exact format:
         return json.loads(text)
 
     except Exception as e:
-        advice = fallback_advice(disease, confidence)
-        advice["summary"] += f" OpenRouter advisory failed: {str(e)}"
-        return advice
+        print(f"OpenRouter advisory failed: {e}")
+        return fallback_advice(disease, confidence)

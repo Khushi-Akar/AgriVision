@@ -3,7 +3,7 @@ import { useDropzone } from "react-dropzone";
 import { UploadCloud, Image as ImageIcon, Loader2 } from "lucide-react";
 import axios from "axios";
 
-const API = 'https://agrivision-j0t2.onrender.com/api';
+const API = import.meta.env.PROD ? 'https://agrivision-j0t2.onrender.com/api' : 'http://127.0.0.1:8000/api';
 
 export default function UploadZone({ onResult }) {
   const [file, setFile] = useState(null);

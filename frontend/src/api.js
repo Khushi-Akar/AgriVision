@@ -1,4 +1,4 @@
-const API_BASE = 'https://agrivision-j0t2.onrender.com/api';
+const API_BASE = import.meta.env.PROD ? 'https://agrivision-j0t2.onrender.com/api' : 'http://127.0.0.1:8000/api';
 export async function scanCrop(file) {
   const formData = new FormData();
   formData.append("file", file);
