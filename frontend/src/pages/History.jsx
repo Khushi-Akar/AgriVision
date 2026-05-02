@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { History as HistoryIcon, Search, Calendar, Activity, CheckCircle, AlertTriangle } from "lucide-react";
 import axios from "axios";
 
-const API = "http://localhost:8000/api";
+const API = "https://agrivision-j0t2.onrender.com";
 
 export default function History() {
   const [history, setHistory] = useState([]);

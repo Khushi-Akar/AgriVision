@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { BarChart2, Activity } from "lucide-react";
 
-const API = "http://localhost:8000/api";
+const API = "https://agrivision-j0t2.onrender.com";
 const COLORS = ["#10b981", "#ef4444"]; // Brand Green, Red
 
 export default function Dashboards() {
