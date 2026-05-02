@@ -2,12 +2,17 @@
 
 AgriVision is an AI-powered agritech web application designed to help farmers and agricultural enthusiasts instantly identify crop diseases from photos. By simply uploading an image of a leaf, the system detects the disease and provides immediate, actionable treatment and prevention advice.
 
+## 🌐 Live Demo
+- **Frontend:** https://agrivision-xi.vercel.app
+- **Backend API:** https://agrivision-j0t2.onrender.com/docs
+
 ## 🚀 Features
 
 - **AI Disease Detection:** Uses a PyTorch deep learning model to classify 38 different plant/disease combinations.
 - **Instant Advice:** Generates severity levels, treatment steps, and prevention strategies.
 - **Analytics Dashboard:** Visualize scan history and health statistics through interactive charts.
 - **Modern UI:** Built with a premium, glassmorphic design system using React and Tailwind CSS v4.
+
 
 ## 💻 Technology Stack
 
