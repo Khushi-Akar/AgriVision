@@ -14,10 +14,13 @@ app = FastAPI(title="AgriVision API", version="1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=[
+        'http://localhost:3000',
+        'https://agrivision-xi.vercel.app',
+        'https://agrivision-co3hi7y67-khushi-akars-projects.vercel.app'
+    ],
+    allow_methods=['*'],
+    allow_headers=['*']
 )
 
 # Lazy load model
